@@ -1,0 +1,30 @@
+Los test unitarios proporcionan una manera de asegurar que el código que se crea funciona y que además garantiza que la funcionalidad implementada previamente
+sigue funcionando.
+
+
+Cada test unitario debe debe ser independiente
+
+Junit implementa las siguientes características de los test unitarios.
+1. Junit carga cada clase que se va a probar de forma separada de cada clase de test, evitando efectos colaterales.
+2. Junit proporciona anotaciones para la inicialización de recursos (@Before, @BeforeClass, @After y @AfterClass)
+3. Junit proporciona una amplia variedad de aserciones que facilitan la comprobación de los resultados de los test.
+4. Junit se integra de forma nativa con las herrmientas más comunes para los desarrolladores (Ant, Maven) y para los principales entornos de desarrollo integrado
+(IDE's) como Eclispe, STS, NetBeans, IntelliJ, etc.
+
+
+La única restricción que tenemos es que la clase de prueba y los métodos que queramos proban han de tener el calificador "public", además debe disponer de un 
+constructor sin parámetros, aunque de esta última característica se encarga Junit de manera transparente para el desarrollador.
+
+En Junit4 se ha eliminado la restricción de Junit3 de que la clase deba extender de la clase TestCase.
+
+Un método que desee ser ejecutado como prueba unitaria debe marcarse con la anotación @Test.
+
+Una buena práctica es denominar al método de prueba con testXXX, siendo XXX el nombre del método que hemos declarado en la aplicación.
+
+Un aspecto importante que hay que tener en cuenta es que Junit crear una instancia cada vez que se ejecuta un método de test, por lo que no posible reutilizar
+variables de instancia (de clase) entre los distintos métodos de test.
+
+-- Poner ejemplo del método de Test
+
+-- Poner capturas de pantalla de Junit en STS
+
